@@ -1,7 +1,9 @@
 package com.hong.dao;
 
 import com.hong.bean.Communicate;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface CommunicateMapper {
  
     int deleteByPrimaryKey(Integer id);

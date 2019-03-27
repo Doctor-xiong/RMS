@@ -2,12 +2,14 @@ package com.hong.dao;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.hong.bean.Order;
 import com.hong.bean.Orderdetail;
 import com.hong.bean.Orderdetail;
 
+@Mapper
 public interface OrderdetailMapper {
 
 	int deleteByPrimaryKey(Integer id);

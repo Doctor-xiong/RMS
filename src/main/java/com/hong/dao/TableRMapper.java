@@ -2,10 +2,12 @@ package com.hong.dao;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.hong.bean.TableR;
 
+@Mapper
 public interface TableRMapper {
 
 	int deleteByPrimaryKey(Integer id);
