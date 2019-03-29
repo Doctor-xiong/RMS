@@ -17,6 +17,7 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 @EnableWebSocket
 public class WebSocketConfig extends WebMvcConfigurerAdapter implements WebSocketConfigurer {
 
+	@Override
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
 		// 1.注册WebSocket
 		String websocket_url = "websocket/socketServer"; // 设置websocket的地址

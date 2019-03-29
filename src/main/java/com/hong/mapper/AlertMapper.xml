@@ -10,7 +10,6 @@
     <result column="date" jdbcType="VARCHAR" property="date" />
   </resultMap>
   <sql id="Base_Column_List">
-   
     id, user, message, state, date
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
